@@ -1,0 +1,58 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+CELL_DIR = Path(__file__).resolve().parent
+DEFAULT_MORPH_PATH = (
+    CELL_DIR.parent.parent / "Cerebellum_mod" / "BC" / "morphology" / "BC.asc"
+)
+
+
+
+RA_OHM_CM = 122.0
+CM_UF_CM2 = 1.0
+CV_MAX_LEN_UM = 40.0
+LEAK_E_MV = -55.0
+NA_E_MV = 60.0
+K_E_MV = -80.0
+H_E_MV = -34.0
+CA_E_MV = 137.5
+
+LEAK_G_SOMA_MS_CM2 = 0.00004   # 4 × 10⁻⁵
+LEAK_G_DEND_MS_CM2 = 0.00001   # 1 × 10⁻⁵
+LEAK_G_AIS_MS_CM2 = 0.00001    # 1 × 10⁻⁵
+LEAK_G_AXON_MS_CM2 = 0.000001  # 1 × 10⁻⁶
+CDP_PUMP = 2e-9  
+
+
+
+
+NAV11_SOMA = 0.2
+NAV16_AIS = 0.3
+NAV16_AXON = 0.001
+
+CAV32_SOMA = 0.0001
+CAV32_DEND = 0.00005
+CAV12_SOMA = 0.0007
+CAV12_DEND = 0.0002
+CAV13_SOMA = 0.000005
+CAV13_DEND = 0.000005
+# Cav2.1 — AIS and axon (permeability, cm/s)
+CAV21_AIS_PERM = 2.2e-4
+CAV21_AXON_PERM = 0.00008
+
+KIR23_SOMA = 0.0001
+KV34_SOMA = 0.097
+KV34_AIS = 0.002
+KV34_AXON = 0.001
+KV43_SOMA = 0.01
+KV43_DEND = 0.00987201764943
+KV11_AXON = 0.0005
+KCA31_SOMA = 0.001
+KCA22_DEND = 0.0065
+KCA11_AIS = 0.01
+KCA11_AXON = 0.001
+
+HCN1_SOMA = 0.001
+HCN1_AIS = 0.001
+HCN1_AXON = 0.0001
